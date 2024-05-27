@@ -1,0 +1,131 @@
+---
+import Hero from "../components/Hero.astro";
+import Features from "../components/Features.astro";
+import Benefits from "../components/Benefits.astro";
+import Blog from "../components/Blog.astro";
+import Contact from "../components/Contact.astro";
+import Join from "../components/Join.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TapIn - Centralizing Public Transportation Payments</title>
+		<meta
+			name="description"
+			content="Join TapIn to simplify and secure your public transportation payments in the Dominican Republic."
+		/>
+		<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			body {
+				font-family: Roboto, sans-serif;
+				background-color: #1e1e1e;
+				color: #d9d9d9;
+				margin: 0;
+				padding: 0;
+			}
+
+			.container {
+				width: 90%;
+				max-width: 1200px;
+				margin: 0 auto;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			header {
+				position: sticky;
+				top: 0;
+				width: 100%;
+				backdrop-filter: blur(10px);
+				background-color: rgba(30, 30, 30, 0.8);
+				z-index: 1000;
+				padding: 20px 0;
+				box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+			}
+
+			header h1 {
+				margin: 0;
+				font-size: 2em;
+			}
+
+			nav ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				display: flex;
+				gap: 20px;
+			}
+
+			nav ul li a {
+				color: #d9d9d9;
+				text-decoration: none;
+				font-weight: bold;
+			}
+
+			footer {
+				background-color: #1e1e1e;
+				padding: 20px 0;
+				text-align: center;
+			}
+
+			footer p {
+				margin: 0;
+			}
+
+			.logo {
+				display: flex;
+				flex-direction: row;
+				justify-items: center;
+				align-items: center;
+			}
+
+			.logo-text {
+				font-family: "MuseoModerno", sans-serif;
+				font-optical-sizing: auto;
+				font-weight: 500;
+				font-style: normal;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="logo">
+					<img src="favicon.svg" alt="TapIn Logo" style="height: 50px;" />
+					<h1 class="logo-text">tapin</h1>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#features">Features</a></li>
+						<li><a href="#benefits">Benefits</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li><a href="#join">Join Us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- <main>
+			<Hero />
+			<Features />
+			<Benefits />
+			<Blog />
+			<Contact />
+			<Join />
+		</main> -->
+
+		<Footer />
+	</body>
+</html>

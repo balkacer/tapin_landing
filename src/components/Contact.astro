@@ -1,0 +1,56 @@
+---
+
+---
+
+<section id="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form
+      action="mailto:support@altarlink.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
+<style>
+  #contact {
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #contact form input,
+  #contact form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #1e1e1e;
+  }
+
+  #contact form button {
+    background-color: #d9d9d9;
+    color: #1e1e1e;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+  }
+</style>
