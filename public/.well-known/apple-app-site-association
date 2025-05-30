@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "YOUR_TEAM_ID.com.altarlink.tapin",
+        "paths": [
+          "/reset-password/*",
+          "/login",
+          "/register",
+          "*"
+        ]
+      }
+    ]
+  }
+}
